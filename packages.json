@@ -1,0 +1,23 @@
+[
+    {
+        "package": "accrualPlot",
+        "url": "https://github.com/CTU-Bern/accrualPlot"
+    },
+    {
+        "package": "btabler",
+        "url": "https://github.com/CTU-Bern/btabler"
+    },
+    {
+        "package": "CTUtemplate",
+        "url": "https://github.com/CTU-Bern/CTUtemplate"
+    },
+    {
+        "package": "kpitools",
+        "url": "github.com/CTU-Bern/kpitools"
+    },
+    {
+        "package": "presize",
+        "url": "https://github.com/CTU-Bern/presize"
+    }
+    
+]
