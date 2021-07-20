@@ -18,6 +18,10 @@
     {
         "package": "presize",
         "url": "https://github.com/CTU-Bern/presize"
+    },
+    {
+        "package": "secuTrialR",
+        "url": "https://github.com/SwissClinicalTrialOrganisation/secuTrialR"
     }
     
 ]
