@@ -13,7 +13,7 @@
     },
     {
         "package": "kpitools",
-        "url": "github.com/CTU-Bern/kpitools"
+        "url": "https://github.com/CTU-Bern/kpitools"
     },
     {
         "package": "presize",
