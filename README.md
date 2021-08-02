@@ -22,7 +22,7 @@ repos until it finds the appropriate package)…
 
 ``` r
 options(repos = c(CTU = "https://ctu-bern.r-universe.dev",
-        CRAN = "https://cran.rstudio.com/"))
+                  CRAN = "https://cran.rstudio.com/"))
 ```
 
 It is then possible to install universe packages as if they were CRAN
