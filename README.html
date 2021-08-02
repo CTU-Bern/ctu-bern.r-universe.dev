@@ -605,7 +605,7 @@ body {
 <p>Briefly, packages should be added to <a href="packages.json">packages.json</a>. They are then tracked on <a href="https://github.com/r-universe/ctu-bern">r-universe</a> and built each hour. A dashboard of the included packages and build status can be found <a href="https://ctu-bern.r-universe.dev/ui#builds">here</a>. All vignettes are also accessible via the <a href="https://ctu-bern.r-universe.dev/ui#articles">articles button</a>.</p>
 <p>To use the universe, in R, do the following, which adds the universe to your list of repos (when installing packages, R will cycle through the repos until it finds the appropriate package)…</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">options</span>(<span class="dt">repos =</span> <span class="kw">c</span>(<span class="dt">CTU =</span> <span class="st">&quot;https://ctu-bern.r-universe.dev&quot;</span>,</span>
-<span id="cb1-2"><a href="#cb1-2"></a>        <span class="dt">CRAN =</span> <span class="st">&quot;https://cran.rstudio.com/&quot;</span>))</span></code></pre></div>
+<span id="cb1-2"><a href="#cb1-2"></a>                  <span class="dt">CRAN =</span> <span class="st">&quot;https://cran.rstudio.com/&quot;</span>))</span></code></pre></div>
 <p>It is then possible to install universe packages as if they were CRAN packages…</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">install.packages</span>(<span class="st">&quot;accrualPlot&quot;</span>)</span></code></pre></div>
 <h2 id="packages-in-the-universe">Packages in the universe</h2>
