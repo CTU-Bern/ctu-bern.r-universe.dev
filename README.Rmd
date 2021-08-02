@@ -15,7 +15,7 @@ To use the universe, in R, do the following, which adds the universe to your lis
 
 ```{r, eval = FALSE}
 options(repos = c(CTU = "https://ctu-bern.r-universe.dev",
-        CRAN = "https://cran.rstudio.com/"))
+                  CRAN = "https://cran.rstudio.com/"))
 ```
 
 It is then possible to install universe packages as if they were CRAN packages...
