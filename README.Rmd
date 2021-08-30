@@ -3,6 +3,7 @@ title: "CTU Berns R Package universe"
 output: 
   github_document:
     html_preview: FALSE
+	keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
