@@ -17,7 +17,7 @@ jobs:
       - name: Install rmarkdown
         run: Rscript -e 'install.packages(c("rmarkdown", "jsonlite", "curl"))'
       - name: Render my document to all types
-        run: Rscript -e 'rmarkdown::render("README.Rmd")'
+        run: Rscript -e 'rmarkdown::render("README.Rmd", html_preview = FALSE)'
       - name: Commit results
         run: |
           git add README*
