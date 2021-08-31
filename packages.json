@@ -20,8 +20,16 @@
         "url": "https://github.com/CTU-Bern/presize"
     },
     {
+        "package": "SwissASR",
+        "url": "https://github.com/CTU-Bern/SwissASR"
+    },
+    {
         "package": "secuTrialR",
         "url": "https://github.com/SwissClinicalTrialOrganisation/secuTrialR"
+    },
+    {
+        "package": "HSAr",
+        "url": "https://github.com/aghaynes/HSAr"
     }
-    
+
 ]
