@@ -24,7 +24,11 @@ It is then possible to install universe packages as if they were CRAN packages..
 install.packages("accrualPlot")
 ```
 
+Alternatively, you can install without setting the option:
 
+```{r, eval = FALSE}
+install.packages("accrualPlot", repos = "https://ctu-bern.r-universe.dev")
+```
 
 ## Packages in the universe
 
