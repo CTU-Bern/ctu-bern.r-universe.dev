@@ -45,6 +45,8 @@ install.packages("accrualPlot", repos = "https://ctu-bern.r-universe.dev")
 | [accrualPlot](https://github.com/CTU-Bern/accrualPlot)                     | ![](https://ctu-bern.r-universe.dev/badges/accrualPlot) |
 | [btabler](https://github.com/CTU-Bern/btabler)                             | ![](https://ctu-bern.r-universe.dev/badges/btabler)     |
 | [CTUtemplate](https://github.com/CTU-Bern/CTUtemplate)                     | ![](https://ctu-bern.r-universe.dev/badges/CTUtemplate) |
+| [HSAr](https://github.com/aghaynes/HSAr)                                   | ![](https://ctu-bern.r-universe.dev/badges/HSAr)        |
 | [kpitools](https://github.com/CTU-Bern/kpitools)                           | ![](https://ctu-bern.r-universe.dev/badges/kpitools)    |
 | [presize](https://github.com/CTU-Bern/presize)                             | ![](https://ctu-bern.r-universe.dev/badges/presize)     |
 | [secuTrialR](https://github.com/SwissClinicalTrialOrganisation/secuTrialR) | ![](https://ctu-bern.r-universe.dev/badges/secuTrialR)  |
+| [SwissASR](https://github.com/CTU-Bern/SwissASR)                           | ![](https://ctu-bern.r-universe.dev/badges/SwissASR)    |
