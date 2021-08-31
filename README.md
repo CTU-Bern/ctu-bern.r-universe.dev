@@ -40,11 +40,11 @@ install.packages("accrualPlot", repos = "https://ctu-bern.r-universe.dev")
 
 ## Packages in the universe
 
-| package     | status                                                  |
-| :---------- | :------------------------------------------------------ |
-| accrualPlot | ![](https://ctu-bern.r-universe.dev/badges/accrualPlot) |
-| btabler     | ![](https://ctu-bern.r-universe.dev/badges/btabler)     |
-| CTUtemplate | ![](https://ctu-bern.r-universe.dev/badges/CTUtemplate) |
-| kpitools    | ![](https://ctu-bern.r-universe.dev/badges/kpitools)    |
-| presize     | ![](https://ctu-bern.r-universe.dev/badges/presize)     |
-| secuTrialR  | ![](https://ctu-bern.r-universe.dev/badges/secuTrialR)  |
+| package                                                                    | status                                                  |
+| :------------------------------------------------------------------------- | :------------------------------------------------------ |
+| [accrualPlot](https://github.com/CTU-Bern/accrualPlot)                     | ![](https://ctu-bern.r-universe.dev/badges/accrualPlot) |
+| [btabler](https://github.com/CTU-Bern/btabler)                             | ![](https://ctu-bern.r-universe.dev/badges/btabler)     |
+| [CTUtemplate](https://github.com/CTU-Bern/CTUtemplate)                     | ![](https://ctu-bern.r-universe.dev/badges/CTUtemplate) |
+| [kpitools](https://github.com/CTU-Bern/kpitools)                           | ![](https://ctu-bern.r-universe.dev/badges/kpitools)    |
+| [presize](https://github.com/CTU-Bern/presize)                             | ![](https://ctu-bern.r-universe.dev/badges/presize)     |
+| [secuTrialR](https://github.com/SwissClinicalTrialOrganisation/secuTrialR) | ![](https://ctu-bern.r-universe.dev/badges/secuTrialR)  |
