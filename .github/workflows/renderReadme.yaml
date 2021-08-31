@@ -7,19 +7,27 @@ on:
 name: Render my document
 
 jobs:
-  render:
-    name: Render my document
-    runs-on: macOS-latest
+  render_document:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: r-lib/actions/setup-r@v1
-      - uses: r-lib/actions/setup-pandoc@v1
-      - name: Install rmarkdown
-        run: Rscript -e 'install.packages(c("rmarkdown", "jsonlite", "curl"))'
-      - name: Render my document to all types
-        run: Rscript -e 'rmarkdown::render("README.Rmd", output_format = "github_document")'
-      - name: Commit results
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Render document
+        uses: lc5415/rmarkdown-action@v1
+        with:
+          input_file: README.Rmd
+	      output_format: github_document
+      - name: Commit files
         run: |
-          git add README*
-          git commit -m 'Re-build my-document' || echo "No changes to commit"
-          git push origin || echo "No changes to commit"
+          git config --local core.autocrlf false
+          git config --local user.email "${{ github.actor }}@users.noreply.github.com"
+          git config --local user.name "${{ github.actor }}"
+          git add . && git add --renormalize .
+          git pull origin ${{ github.head_ref }} --autostash --rebase -X ours
+          git commit --allow-empty -am "AUTO-GH ACTION: ${{ github.workflow }}"
+          NO_PAGER=1 git --no-pager diff HEAD^
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          branch: ${{ github.head_ref }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
