@@ -36,12 +36,13 @@ install.packages("accrualPlot", repos = "https://ctu-bern.r-universe.dev")
 
 library(jsonlite)
 pkgs <- sort(jsonlite::fromJSON("https://ctu-bern.r-universe.dev/packages/"))
+pkglinks <- jsonlite::fromJSON("packages.json")
 
 ```
 
 ```{r pressure, echo=FALSE, results='asis'}
 knitr::kable(do.call("rbind", lapply(pkgs, function(x) {
-  data.frame(package = x, status = glue::glue("![](https://ctu-bern.r-universe.dev/badges/{x})"))
+  data.frame(package = glue::glue("[{x}]({pkglinks$url[pkglinks$package == x]})"), status = glue::glue("![](https://ctu-bern.r-universe.dev/badges/{x})"))
   })))
 ```
 
