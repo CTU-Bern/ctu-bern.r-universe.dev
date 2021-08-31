@@ -32,6 +32,12 @@ packages…
 install.packages("accrualPlot")
 ```
 
+Alternatively, you can install without setting the option:
+
+``` r
+install.packages("accrualPlot", repos = "https://ctu-bern.r-universe.dev")
+```
+
 ## Packages in the universe
 
 | package     | status                                                  |
