@@ -1,7 +1,6 @@
 args = commandArgs(trailingOnly = TRUE)
 library(rmarkdown)
-system("sudo apt-get install -y r-cran-curl")
-install.packages(c("jsonlite"))
+install.packages(c("curl", "jsonlite"))
 library(curl)
 library(jsonlite)
 render(args[1], output_format = args[2])
