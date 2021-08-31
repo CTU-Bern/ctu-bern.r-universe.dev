@@ -1,3 +1,6 @@
 args = commandArgs(trailingOnly = TRUE)
 library(rmarkdown)
+install.packages(c("curl", "jsonlite"))
+library(curl)
+library(jsonlite)
 render(args[1], output_format = args[2])
