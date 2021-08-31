@@ -1,15 +1,36 @@
 ---
-title: "CTU Berns R Package universe"
 output: github_document
 ---
+
+# CTU Berns R Package universe <a href="https://ctu-bern.r-universe.dev/"><img src='logo.png' align="right" height="200"></a>
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-R package universes are similar a bit like mini-CRANs. 'The system automatically tracks registered git repositories containing R packages, builds binaries for Windows and MacOS, renders vignettes, and makes all data available through dashboards, feeds and APIs on personal subdomains'. [See here for further details of universes](https://ropensci.org/blog/2021/06/22/setup-runiverse/)
+R package universes are similar a bit like mini-CRANs. 'The system automatically tracks registered git repositories containing R packages, builds binaries for Windows and MacOS, renders vignettes, and makes all data available through dashboards, feeds and APIs on personal subdomains'. 
 
-Briefly, packages should be added to [packages.json](packages.json). They are then tracked on [r-universe](https://github.com/r-universe/ctu-bern) and built each hour. A dashboard of the included packages and build status can be found [here](https://ctu-bern.r-universe.dev/ui#builds). All vignettes are also accessible via the [articles button](https://ctu-bern.r-universe.dev/ui#articles).
+CTU Berns universe is [here](https://ctu-bern.r-universe.dev).
+
+## Packages in the universe
+
+```{r , echo = FALSE}
+
+library(jsonlite)
+pkgs <- sort(jsonlite::fromJSON("https://ctu-bern.r-universe.dev/packages/"))
+pkglinks <- jsonlite::fromJSON("packages.json")
+
+```
+
+```{r pressure, echo=FALSE, results='asis'}
+knitr::kable(do.call("rbind", lapply(pkgs, function(x) {
+  data.frame(package = glue::glue("[{x}]({pkglinks$url[pkglinks$package == x]})"), status = glue::glue("![](https://ctu-bern.r-universe.dev/badges/{x})"))
+  })))
+```
+
+## For users...
+
+All vignettes are accessible via the [articles button](https://ctu-bern.r-universe.dev/ui#articles) on the universe page.
 
 To use the universe, in R, do the following, which adds the universe to your list of repos (when installing packages, R will cycle through the repos until it finds the appropriate package)...
 
@@ -30,20 +51,8 @@ Alternatively, you can install without setting the option:
 install.packages("accrualPlot", repos = "https://ctu-bern.r-universe.dev")
 ```
 
-## Packages in the universe
+## For maintainers...
 
-```{r , echo = FALSE}
+A dashboard of the included packages and build status can be found [here](https://ctu-bern.r-universe.dev/ui#builds). 
 
-library(jsonlite)
-pkgs <- sort(jsonlite::fromJSON("https://ctu-bern.r-universe.dev/packages/"))
-pkglinks <- jsonlite::fromJSON("packages.json")
-
-```
-
-```{r pressure, echo=FALSE, results='asis'}
-knitr::kable(do.call("rbind", lapply(pkgs, function(x) {
-  data.frame(package = glue::glue("[{x}]({pkglinks$url[pkglinks$package == x]})"), status = glue::glue("![](https://ctu-bern.r-universe.dev/badges/{x})"))
-  })))
-```
-
-
+Briefly, packages should be added to [packages.json](packages.json). They are then tracked on [r-universe](https://github.com/r-universe/ctu-bern) and built each hour. [See here for further details of universes](https://ropensci.org/blog/2021/06/22/setup-runiverse/)
