@@ -60,3 +60,9 @@ They are then tracked on
 [r-universe](https://github.com/r-universe/ctu-bern) and built each
 hour. [See here for further details of
 universes](https://ropensci.org/blog/2021/06/22/setup-runiverse/)
+
+### Acknowledgements
+
+The package logo was created with
+[`ggplot2`](https://ggplot2.tidyverse.org/) and
+[`hexSticker`](https://github.com/GuangchuangYu/hexSticker).
