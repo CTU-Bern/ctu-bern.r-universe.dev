@@ -15,16 +15,17 @@ CTU Berns universe is [here](https://ctu-bern.r-universe.dev).
 ## Packages in the universe
 
 ```{r , echo = FALSE}
-
-library(jsonlite)
-pkgs <- sort(jsonlite::fromJSON("https://ctu-bern.r-universe.dev/packages/"))
-pkglinks <- jsonlite::fromJSON("packages.json")
+pkgs <- corpus::read_ndjson("https://ctu-bern.r-universe.dev/stats/descriptions/")
+pkgs <- pkgs[order(pkgs$Package), ]
+pkgs$Description <- gsub("\n", " ", pkgs$Description, fixed = TRUE)
 
 ```
 
 ```{r pressure, echo=FALSE, results='asis'}
-knitr::kable(do.call("rbind", lapply(pkgs, function(x) {
-  data.frame(package = glue::glue("[{x}]({pkglinks$url[pkglinks$package == x]})"), status = glue::glue("![](https://ctu-bern.r-universe.dev/badges/{x})"))
+knitr::kable(do.call("rbind", lapply(pkgs$Package, function(x) {
+  data.frame(package = glue::glue("[`{x}`]({pkgs$RemoteUrl[pkgs$Package == x]})"), 
+             description = pkgs$Description[pkgs$Package == x],
+             status = glue::glue(" ![](https://ctu-bern.r-universe.dev/badges/{x}) "))
   })))
 ```
 
