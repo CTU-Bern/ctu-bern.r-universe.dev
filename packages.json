@@ -30,6 +30,11 @@
     {
         "package": "HSAr",
         "url": "https://github.com/aghaynes/HSAr"
+    },
+    {
+        "package": "sse",
+        "url": "https://github.com/thofab/sse"
     }
+    
 
 ]
