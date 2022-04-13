@@ -34,6 +34,10 @@
     {
         "package": "sse",
         "url": "https://github.com/thofab/sse"
+    },
+    {
+        "package": "svn",
+        "url": "https://github.com/CTU-Bern/svn"
     }
     
 
