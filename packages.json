@@ -42,6 +42,10 @@
     {
         "package": "unibeCols",
         "url": "https://github.com/CTU-Bern/unibeCols"
+    },
+    {
+        "package": "redcaptools",
+        "url": "https://github.com/CTU-Bern/redcaptools"
     }
     
 
