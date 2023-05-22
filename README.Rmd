@@ -15,7 +15,7 @@ CTU Berns universe is [here](https://ctu-bern.r-universe.dev).
 ## Packages in the universe
 
 ```{r , echo = FALSE}
-pkgs <- corpus::read_ndjson("https://ctu-bern.r-universe.dev/stats/descriptions/")
+pkgs <- jsonlite::stream_in(url("https://ctu-bern.r-universe.dev/stats/descriptions/"))
 pkgs <- pkgs[order(pkgs$Package), ]
 pkgs$Description <- gsub("\n", " ", pkgs$Description, fixed = TRUE)
 
