@@ -11,6 +11,12 @@ CTU Berns universe is [here](https://ctu-bern.r-universe.dev).
 
 ## Packages in the universe
 
+    ## opening url input connection.
+
+    ##  Found 12 records... Imported 12 records. Simplifying...
+
+    ## closing url input connection.
+
 | package                                                                      | description                                                                                                                                                                                                                                                                                                                                                                                                            | status                                                  |
 |:-----------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------|
 | [`accrualPlot`](https://github.com/CTU-Bern/accrualPlot)                     | Tracking accrual in clinical trials is important for trial success. If accrual is too slow, the trial will take too long and be too expensive. If accrual is much faster than expected, time sensitive tasks such as the writing of statistical analysis plans might need to be rushed. ‘accrualPlot’ provides functions to aid the tracking of accrual and predict when a trial will reach it’s intended sample size. | ![](https://ctu-bern.r-universe.dev/badges/accrualPlot) |
