@@ -46,6 +46,10 @@
     {
         "package": "redcaptools",
         "url": "https://github.com/CTU-Bern/redcaptools"
+    },
+    {
+        "package": "validation",
+        "url": "https://github.com/SwissClinicalTrialOrganisation/validation"
     }
     
 
