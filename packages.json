@@ -16,8 +16,16 @@
         "url": "https://github.com/CTU-Bern/kpitools"
     },
     {
+        "package": "powergrid",
+        "url": "https://github.com/SwissClinicalTrialOrganisation/powergrid"
+    },
+    {
         "package": "presize",
         "url": "https://github.com/CTU-Bern/presize"
+    },
+    {
+        "package": "randolist",
+        "url": "https://github.com/CTU-Bern/randolist"
     },
     {
         "package": "SwissASR",
