@@ -24,8 +24,8 @@
         "url": "https://github.com/CTU-Bern/presize"
     },
     {
-        "package": "randolist",
-        "url": "https://github.com/CTU-Bern/randolist"
+        "package": "randotools",
+        "url": "https://github.com/CTU-Bern/randotools"
     },
     {
         "package": "SwissASR",
