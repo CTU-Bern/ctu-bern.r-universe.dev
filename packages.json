@@ -12,6 +12,10 @@
         "url": "https://github.com/CTU-Bern/CTUtemplate"
     },
     {
+        "package": "forplot",
+        "url": "https://github.com/CTU-Bern/forplot"
+    },
+    {
         "package": "kpitools",
         "url": "https://github.com/CTU-Bern/kpitools"
     },
