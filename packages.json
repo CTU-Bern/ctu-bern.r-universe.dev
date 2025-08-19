@@ -16,6 +16,10 @@
         "url": "https://github.com/CTU-Bern/forplot"
     },
     {
+        "package": "harmBounds",
+        "url": "https://github.com/CTU-Bern/harmBounds"
+    },
+    {
         "package": "kpitools",
         "url": "https://github.com/CTU-Bern/kpitools"
     },
