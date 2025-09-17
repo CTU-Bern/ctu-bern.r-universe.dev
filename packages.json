@@ -48,6 +48,10 @@
         "url": "https://github.com/thofab/sse"
     },
     {
+        "package": "survSAKK",
+        "url": "https://github.com/SAKK-Statistics/survSAKK"
+    },
+    {
         "package": "svn",
         "url": "https://github.com/CTU-Bern/svn"
     },
