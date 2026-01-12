@@ -15,7 +15,15 @@ CTU Berns universe is [here](https://ctu-bern.r-universe.dev).
 ## Packages in the universe
 
 ```{r , echo = FALSE, message = FALSE, results='hide'}
-pkgs <- jsonlite::stream_in(url("https://ctu-bern.r-universe.dev/stats/descriptions/"))
+pkgs <- httr2::request("https://ctu-bern.r-universe.dev/api/packages") |>
+  httr2::req_user_agent("R-universe docs") |>
+  httr2::req_perform() |>
+  httr2::resp_body_json()
+pkgs <- sapply(pkgs, function(x){
+  data.frame(Package = x$Package,
+             Description = x$Description,
+             RemoteUrl = x$RemoteUrl)
+}, simplify = FALSE) |> dplyr::bind_rows()
 pkgs <- pkgs[order(pkgs$Package), ]
 pkgs$Description <- gsub("\n", " ", pkgs$Description, fixed = TRUE)
 
