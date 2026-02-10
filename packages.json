@@ -12,6 +12,10 @@
         "url": "https://github.com/CTU-Bern/CTUtemplate"
     },
     {
+        "package": "CondPower",
+        "url": "https://github.com/CTU-Bern/CondPower"
+    },
+    {
         "package": "forplot",
         "url": "https://github.com/CTU-Bern/forplot"
     },
